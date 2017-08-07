@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magnets Search Engine</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">Magnets Search Engine</a></h1>
+            <div class="search-form-wrapper">
+                <form action="/search" method="GET" id="search-form">
+                    <input type="search" name="q" id="q" autofocus/>
+                    <input type="submit" name="submit" value="&#x1f50d;"/>
+                </form>
+            </div>
+        </header>
+        <main>
+        <p id="results-infos" style="display: none">&nbsp;</p>
+        <ul id="results">
+        </ul>
+        </main>
+        <footer>
+            <p id="documents-count">Loading</p>
+        </footer>
+        <script defer src="script.js"></script>
+    </body>
+</html>

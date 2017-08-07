@@ -1,0 +1,149 @@
+html,body {
+    height:100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background:#f3f3f3;
+    color:darkslategrey;
+    display: flex;
+    /*! align-items: center; */
+    /*! justify-content: center; */
+    flex-direction: column;
+    font-family: Roboto, Verdana, Sans-serif;
+}
+header {
+    margin: 0 0.8em;
+}
+h1 {
+    font-weight: 100;
+    font-size: 1.4em;
+}
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+form {
+    display: flex;
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
+    max-width:50em;
+    /*! margin: auto; */
+    flex-grow: 1;
+}
+input {
+    box-sizing: content-box;
+    margin: 0;
+    padding:0.1em 0.7em;
+    height: 2em;
+    font-size:1em;
+    border: 1px solid rgba(255,255,255,100);
+    /*! box-shadow: 1px 1px 2px black; */
+}
+input[type="search"] {
+    flex-grow:1;
+}
+.search-form-wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+body.with-results .search-form-wrapper {
+    justify-content: flex-start;
+}
+
+#documents-count {
+    margin:1em;
+    font-size:small;
+}
+#results-infos {
+    text-align: right;
+    font-size: smaller;
+    margin: 1em;
+    max-width:61.5em;
+}
+
+.files-list {
+    font-size: small;
+    border-collapse: collapse;
+    margin: 1em 1em 1em 3.3em;
+}
+.files-list td {
+    border: 1px solid white;
+    padding: 0.1em 1em 0.1em 0.4em;
+}
+td.file-size {
+    text-align:right;
+    padding: 0.1em 0.4em 0.1em 1em;
+    white-space: nowrap;
+}
+
+#results {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#results li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding:0.5em;
+}
+
+#results li:nth-child(odd) {
+    background: #efefef;
+}
+
+.magnet-link {
+    text-decoration: none;
+    font-size: 1.6em;
+    float: left;
+    display: block;
+    line-height: 1.75em;
+    margin-right: 0.3em;
+
+}
+
+.size-info {
+    font-size: small;
+    padding: 0;
+    display: inline;
+    margin-right: 0.5em;
+
+}
+
+.main-link {
+    color: #38354e;
+}
+
+.search-link {
+  background: #f0f0f0;
+  border: none;
+  text-decoration: none;
+  font-size: small;
+}
+#results button {
+  background: transparent;
+  border: none;
+  margin: 0 2px;
+  padding: 0;
+  font-size: small;
+  cursor: pointer;
+}
+
+body:not(.with-results) footer {
+    text-align: center;
+}
+body:not(.with-results) h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+body:not(.with-results) {
+    justify-content: center;
+}
