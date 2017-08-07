@@ -14,4 +14,4 @@ Search engine for magnets from the Bittorrent's [DHT](https://en.wikipedia.org/w
  
 # Why ?
 
-This project is an alternative to `magneticow`, to play with Elastic Search and Go. The conclusion : I would have been faster using NodeJS and Elastic Search is kinda heavy, but it's still better than Python + Sqlite.
+This project is an alternative to `magneticow`, to play with Elastic Search and Go.
