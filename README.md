@@ -6,10 +6,12 @@ Search engine for magnets from the Bittorrent's [DHT](https://en.wikipedia.org/w
 
 # Technologies
 
- * [Magnetico](https://github.com/boramalper/magnetico) for srapping the DHT.
+ * [Magnetico](https://github.com/boramalper/magnetico) for scrapping the DHT.
  * Elastic Search for the search database.
  * Go for the backend REST API.
  * HTML/CSS/JS for the frontend.
  * Docker, as always
  
- 
+# Why ?
+
+This project is an alternative to `magneticow`, to play with Elastic Search and Go. The conclusion : I would have been faster using NodeJS and Elastic Search is kinda heavy, but it's still better than Python + Sqlite.
